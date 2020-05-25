@@ -16,17 +16,17 @@ class GeofenceManager: NSObject {
     
     func getAlerts(from params: [String:Any]) {
         
-//        GeofenceServiceAPI.shared.getAlerts(from: params, result: { (result: Result<TripListByFilterResponse, APIServiceError>) in
-//            switch result {
-//            case .success(let response):
-//                // Determine success or error
-//                print("###6 in success")
-//                print("###6 in success Data = \(response.toJSON()!)")
-//                self.geofenceDelegate?.AlertsResponse(isSuccess: true, error: nil, data: response)
-//            case .failure(let error):
-//                print("###6 in failure")
-//                self.geofenceDelegate?.AlertsResponse(isSuccess: false, error: error.localizedDescription, data: nil)
-//            }
-//        })
+        GeofenceServiceAPI.shared.getAlerts(from: params, result: { (result: Result<AlertsResponse, APIServiceError>) in
+            switch result {
+            case .success(let response):
+                // Determine success or error
+                print("###6 in success")
+                print("###6 in success Data = \(response.toJSON()!)")
+                self.geofenceDelegate?.getAlertsResponse(isSuccess: true, error: nil, data: response)
+            case .failure(let error):
+                print("###6 in failure")
+                self.geofenceDelegate?.getAlertsResponse(isSuccess: false, error: error.localizedDescription, data: nil)
+            }
+        })
    }
 }

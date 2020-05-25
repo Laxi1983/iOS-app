@@ -59,7 +59,7 @@ class TripDetailsSecondTableViewCell: UITableViewCell {
             self.searchBar.isTranslucent = true
             self.searchBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
             
-                print("&&&")
+                
         
             self.collectionView.register(UINib(nibName: "RideDetailsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RideDetailsCollectionViewCell")
             self.collectionView.reloadData()

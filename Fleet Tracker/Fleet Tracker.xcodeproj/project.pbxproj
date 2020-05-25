@@ -7,11 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20380A882477B7BB00238F8D /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380A872477B7BB00238F8D /* MainTabViewController.swift */; };
+		20380A8A2477B9BD00238F8D /* GUIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380A892477B9BD00238F8D /* GUIService.swift */; };
+		20380A8F2477BDEB00238F8D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380A8E2477BDEB00238F8D /* UIViewController+Extension.swift */; };
+		20380AC72477BFDA00238F8D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380AC62477BFDA00238F8D /* NotificationViewController.swift */; };
+		20380AC92477CB7400238F8D /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20380AC82477CB7400238F8D /* Dashboard.storyboard */; };
+		20380ACB2477CDA900238F8D /* UIWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380ACA2477CDA900238F8D /* UIWindowTransition.swift */; };
+		20380ACD2477DCA400238F8D /* VehicleBooking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20380ACC2477DCA400238F8D /* VehicleBooking.storyboard */; };
+		20380ACF2477DCB500238F8D /* Reports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20380ACE2477DCB500238F8D /* Reports.storyboard */; };
+		20380AD12477DCC700238F8D /* ProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20380AD02477DCC700238F8D /* ProfileSettings.storyboard */; };
+		20380AD62477DD2D00238F8D /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380AD52477DD2D00238F8D /* UserProfileViewController.swift */; };
+		20380AD82477DD5600238F8D /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380AD72477DD5600238F8D /* ReportsViewController.swift */; };
+		20380ADA2477DD6600238F8D /* VehicleBokingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380AD92477DD6600238F8D /* VehicleBokingViewController.swift */; };
+		20380ADC2477F7FD00238F8D /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20380ADB2477F7FC00238F8D /* CustomSegmentedControl.swift */; };
+		20FB63AC24767EC400C3557C /* proxima_ssv in Resources */ = {isa = PBXBuildFile; fileRef = 20FB63AB24767EC400C3557C /* proxima_ssv */; };
 		3D0282C82456B80300D3EB2A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0282C72456B80300D3EB2A /* UIColor+Extension.swift */; };
 		3D0282CE2456E16A00D3EB2A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0282CD2456E16A00D3EB2A /* Colors.xcassets */; };
 		3D0282D02456FDA800D3EB2A /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0282CF2456FDA800D3EB2A /* WelcomeScreenViewController.swift */; };
 		3D0775D72473DA8600F200B6 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0775D62473DA8600F200B6 /* EventsViewController.swift */; };
-		3D0775D92473E03D00F200B6 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0775D82473E03D00F200B6 /* NotificationTableViewCell.swift */; };
+		3D0775D92473E03D00F200B6 /* EventsNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0775D82473E03D00F200B6 /* EventsNotificationTableViewCell.swift */; };
 		3D0775DB2474087200F200B6 /* FaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0775DA2474087200F200B6 /* FaultsViewController.swift */; };
 		3D1D23942452C37B0031B4FA /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D23932452C37B0031B4FA /* ChartViewController.swift */; };
 		3D46562824501937005ABF42 /* VehicleDataAssociatedToDriverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46562724501937005ABF42 /* VehicleDataAssociatedToDriverResponse.swift */; };
@@ -46,7 +60,6 @@
 		3D5959092474FEA20013E71B /* GeofenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5959082474FEA20013E71B /* GeofenceManager.swift */; };
 		3D59590B2474FEC80013E71B /* GeofenceServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59590A2474FEC80013E71B /* GeofenceServiceAPI.swift */; };
 		3D59590D24750A4E0013E71B /* ProjectUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59590C24750A4E0013E71B /* ProjectUtils.swift */; };
-		3D5BCB1F246BE922006780FA /* proxima_ssv in Resources */ = {isa = PBXBuildFile; fileRef = 3D5BCB1E246BE922006780FA /* proxima_ssv */; };
 		3D639A74245FFBFA001E2DFB /* VehicleDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D639A72245FFBFA001E2DFB /* VehicleDetailsCollectionViewCell.swift */; };
 		3D639A75245FFBFA001E2DFB /* VehicleDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D639A73245FFBFA001E2DFB /* VehicleDetailsCollectionViewCell.xib */; };
 		3D639A7724607780001E2DFB /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D639A7624607780001E2DFB /* ImageCollectionViewCell.swift */; };
@@ -85,6 +98,7 @@
 		3DAC0002244706CC005B8C9B /* FleetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC0001244706CC005B8C9B /* FleetsManager.swift */; };
 		3DAC0004244706EC005B8C9B /* FleetsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC0003244706EC005B8C9B /* FleetsDelegate.swift */; };
 		3DAC000624470B5F005B8C9B /* FleetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC000524470B5F005B8C9B /* FleetResponse.swift */; };
+		3DACC3DB247683090025CD2A /* GeofenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DACC3DA247683090025CD2A /* GeofenceViewController.swift */; };
 		3DACFFFE244701B8005B8C9B /* FleetOwnerFleetListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DACFFFD244701B8005B8C9B /* FleetOwnerFleetListRequest.swift */; };
 		3DCB2A792448636300B38053 /* VehicleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB2A782448636300B38053 /* VehicleDelegate.swift */; };
 		3DCB2A7B2448641300B38053 /* VehicleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB2A7A2448641300B38053 /* VehicleManager.swift */; };
@@ -137,6 +151,11 @@
 		3DEA142F245822B00001412C /* GoogleMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA142E245822B00001412C /* GoogleMapManager.swift */; };
 		3DEA14322458352A0001412C /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA14312458352A0001412C /* BookingsViewController.swift */; };
 		3DEA14342458353D0001412C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA14332458353D0001412C /* SearchViewController.swift */; };
+		3DF1988D24779C45002B4AF1 /* AlertsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1988C24779C45002B4AF1 /* AlertsRequest.swift */; };
+		3DF1988F24779C67002B4AF1 /* AlertsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1988E24779C67002B4AF1 /* AlertsResponse.swift */; };
+		3DF1989124779C83002B4AF1 /* AlertsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1989024779C83002B4AF1 /* AlertsModel.swift */; };
+		3DF198932477B29D002B4AF1 /* FaultsNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF198922477B29C002B4AF1 /* FaultsNotificationTableViewCell.swift */; };
+		3DF198952477B2B6002B4AF1 /* GeofenceNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF198942477B2B6002B4AF1 /* GeofenceNotificationTableViewCell.swift */; };
 		B5999F7F49BC9BAAF0103358 /* Pods_Fleet_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F90C5B5C7A82E06FF304BF3 /* Pods_Fleet_Tracker.framework */; };
 		C909169F239A36610087542E /* MSALUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909169E239A36610087542E /* MSALUserModel.swift */; };
 		C90916A2239A7A9E0087542E /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90916A1239A7A9E0087542E /* EndPoint.swift */; };
@@ -165,11 +184,25 @@
 /* Begin PBXFileReference section */
 		060F108E655D85CC47A55EDF /* Pods-Fleet Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fleet Tracker.release.xcconfig"; path = "Target Support Files/Pods-Fleet Tracker/Pods-Fleet Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		0F90C5B5C7A82E06FF304BF3 /* Pods_Fleet_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fleet_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20380A872477B7BB00238F8D /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		20380A892477B9BD00238F8D /* GUIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUIService.swift; sourceTree = "<group>"; };
+		20380A8E2477BDEB00238F8D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		20380AC62477BFDA00238F8D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		20380AC82477CB7400238F8D /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		20380ACA2477CDA900238F8D /* UIWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowTransition.swift; sourceTree = "<group>"; };
+		20380ACC2477DCA400238F8D /* VehicleBooking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VehicleBooking.storyboard; sourceTree = "<group>"; };
+		20380ACE2477DCB500238F8D /* Reports.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reports.storyboard; sourceTree = "<group>"; };
+		20380AD02477DCC700238F8D /* ProfileSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileSettings.storyboard; sourceTree = "<group>"; };
+		20380AD52477DD2D00238F8D /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		20380AD72477DD5600238F8D /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		20380AD92477DD6600238F8D /* VehicleBokingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleBokingViewController.swift; sourceTree = "<group>"; };
+		20380ADB2477F7FC00238F8D /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		20FB63AB24767EC400C3557C /* proxima_ssv */ = {isa = PBXFileReference; lastKnownFileType = folder; path = proxima_ssv; sourceTree = "<group>"; };
 		3D0282C72456B80300D3EB2A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3D0282CD2456E16A00D3EB2A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3D0282CF2456FDA800D3EB2A /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 		3D0775D62473DA8600F200B6 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
-		3D0775D82473E03D00F200B6 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		3D0775D82473E03D00F200B6 /* EventsNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsNotificationTableViewCell.swift; sourceTree = "<group>"; };
 		3D0775DA2474087200F200B6 /* FaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaultsViewController.swift; sourceTree = "<group>"; };
 		3D1D23932452C37B0031B4FA /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		3D46562724501937005ABF42 /* VehicleDataAssociatedToDriverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDataAssociatedToDriverResponse.swift; sourceTree = "<group>"; };
@@ -204,7 +237,6 @@
 		3D5959082474FEA20013E71B /* GeofenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceManager.swift; sourceTree = "<group>"; };
 		3D59590A2474FEC80013E71B /* GeofenceServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceServiceAPI.swift; sourceTree = "<group>"; };
 		3D59590C24750A4E0013E71B /* ProjectUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUtils.swift; sourceTree = "<group>"; };
-		3D5BCB1E246BE922006780FA /* proxima_ssv */ = {isa = PBXFileReference; lastKnownFileType = folder; name = proxima_ssv; path = ../../../../../../Downloads/proxima_ssv; sourceTree = "<group>"; };
 		3D639A72245FFBFA001E2DFB /* VehicleDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D639A73245FFBFA001E2DFB /* VehicleDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D639A7624607780001E2DFB /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -242,6 +274,7 @@
 		3DAC0001244706CC005B8C9B /* FleetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetsManager.swift; sourceTree = "<group>"; };
 		3DAC0003244706EC005B8C9B /* FleetsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetsDelegate.swift; sourceTree = "<group>"; };
 		3DAC000524470B5F005B8C9B /* FleetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetResponse.swift; sourceTree = "<group>"; };
+		3DACC3DA247683090025CD2A /* GeofenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceViewController.swift; sourceTree = "<group>"; };
 		3DACFFFD244701B8005B8C9B /* FleetOwnerFleetListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetOwnerFleetListRequest.swift; sourceTree = "<group>"; };
 		3DACFFFF24470582005B8C9B /* FleetListServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetListServiceAPI.swift; sourceTree = "<group>"; };
 		3DCB2A782448636300B38053 /* VehicleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDelegate.swift; sourceTree = "<group>"; };
@@ -295,6 +328,11 @@
 		3DEA142E245822B00001412C /* GoogleMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapManager.swift; sourceTree = "<group>"; };
 		3DEA14312458352A0001412C /* BookingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
 		3DEA14332458353D0001412C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3DF1988C24779C45002B4AF1 /* AlertsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsRequest.swift; sourceTree = "<group>"; };
+		3DF1988E24779C67002B4AF1 /* AlertsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsResponse.swift; sourceTree = "<group>"; };
+		3DF1989024779C83002B4AF1 /* AlertsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsModel.swift; sourceTree = "<group>"; };
+		3DF198922477B29C002B4AF1 /* FaultsNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaultsNotificationTableViewCell.swift; sourceTree = "<group>"; };
+		3DF198942477B2B6002B4AF1 /* GeofenceNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceNotificationTableViewCell.swift; sourceTree = "<group>"; };
 		AC85758DC901DC1FCAD4218F /* Pods-Fleet Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fleet Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Fleet Tracker/Pods-Fleet Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		C909169E239A36610087542E /* MSALUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALUserModel.swift; sourceTree = "<group>"; };
 		C90916A1239A7A9E0087542E /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -334,6 +372,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20380A862477B79E00238F8D /* CustomControllers */ = {
+			isa = PBXGroup;
+			children = (
+				20380ADB2477F7FC00238F8D /* CustomSegmentedControl.swift */,
+				20380A872477B7BB00238F8D /* MainTabViewController.swift */,
+			);
+			path = CustomControllers;
+			sourceTree = "<group>";
+		};
+		20380A8B2477BB5F00238F8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20380A8E2477BDEB00238F8D /* UIViewController+Extension.swift */,
+				20380ACA2477CDA900238F8D /* UIWindowTransition.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20380AC52477BFC500238F8D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				20380AC62477BFDA00238F8D /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		20380AD22477DD1D00238F8D /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				20380AD72477DD5600238F8D /* ReportsViewController.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		20380AD32477DD1E00238F8D /* VehicleBooking */ = {
+			isa = PBXGroup;
+			children = (
+				20380AD92477DD6600238F8D /* VehicleBokingViewController.swift */,
+			);
+			path = VehicleBooking;
+			sourceTree = "<group>";
+		};
+		20380AD42477DD1E00238F8D /* ProfileSettings */ = {
+			isa = PBXGroup;
+			children = (
+				20380AD52477DD2D00238F8D /* UserProfileViewController.swift */,
+			);
+			path = ProfileSettings;
+			sourceTree = "<group>";
+		};
 		3D0282CC2456E0E900D3EB2A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,7 +442,7 @@
 		3D5BCB1D246BE8E3006780FA /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
-				3D5BCB1E246BE922006780FA /* proxima_ssv */,
+				20FB63AB24767EC400C3557C /* proxima_ssv */,
 			);
 			path = CustomFonts;
 			sourceTree = "<group>";
@@ -381,7 +469,9 @@
 				3DE090B824613B5900D07BAE /* TripDetailsFirstTableViewCell.swift */,
 				3DE090BA24613B7F00D07BAE /* TripDetailsSecondTableViewCell.swift */,
 				3DE090BC24613B9F00D07BAE /* TripDetailsThirdTableViewCell.swift */,
-				3D0775D82473E03D00F200B6 /* NotificationTableViewCell.swift */,
+				3D0775D82473E03D00F200B6 /* EventsNotificationTableViewCell.swift */,
+				3DF198922477B29C002B4AF1 /* FaultsNotificationTableViewCell.swift */,
+				3DF198942477B2B6002B4AF1 /* GeofenceNotificationTableViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -398,6 +488,7 @@
 		3DEA142C245821480001412C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				20380A8B2477BB5F00238F8D /* Extensions */,
 				3DEA142E245822B00001412C /* GoogleMapManager.swift */,
 				3D59590C24750A4E0013E71B /* ProjectUtils.swift */,
 			);
@@ -444,6 +535,7 @@
 				C9317C632398D476009C7D1B /* LaunchScreen.storyboard */,
 				C9317C662398D476009C7D1B /* Info.plist */,
 				C9317C5E2398D475009C7D1B /* Fleet_Tracker.xcdatamodeld */,
+				20380A892477B9BD00238F8D /* GUIService.swift */,
 			);
 			path = "Fleet Tracker";
 			sourceTree = "<group>";
@@ -547,6 +639,8 @@
 				3D8AFCA3245EBE3300AD9CC4 /* SpecificBookingStatusModel.swift */,
 				3D8AFCA7245EC33700AD9CC4 /* VehicleBookingSummaryResponse.swift */,
 				3D8AFCA9245EC34A00AD9CC4 /* VehicleBookingSummaryModel.swift */,
+				3DF1988E24779C67002B4AF1 /* AlertsResponse.swift */,
+				3DF1989024779C83002B4AF1 /* AlertsModel.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -577,6 +671,7 @@
 				3D8AFC99245EB93F00AD9CC4 /* BookedVehicleCountRequest.swift */,
 				3D8AFC9F245EBD6800AD9CC4 /* SpecificBookingStatusRequest.swift */,
 				3D8AFCA5245EC10200AD9CC4 /* VehicleBookingSummaryRequest.swift */,
+				3DF1988C24779C45002B4AF1 /* AlertsRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -636,6 +731,11 @@
 		C9BE4839239A174B009860A6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				20380AD42477DD1E00238F8D /* ProfileSettings */,
+				20380AD22477DD1D00238F8D /* Reports */,
+				20380AD32477DD1E00238F8D /* VehicleBooking */,
+				20380AC52477BFC500238F8D /* Notification */,
+				20380A862477B79E00238F8D /* CustomControllers */,
 				C9BE483A239A1756009860A6 /* User */,
 			);
 			path = Controller;
@@ -659,6 +759,7 @@
 				3D885070247269E100D53B3E /* NotificationTabbarViewController.swift */,
 				3D0775D62473DA8600F200B6 /* EventsViewController.swift */,
 				3D0775DA2474087200F200B6 /* FaultsViewController.swift */,
+				3DACC3DA247683090025CD2A /* GeofenceViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -669,6 +770,10 @@
 				3D639A67245FE9DA001E2DFB /* XIB */,
 				C9317C5B2398D475009C7D1B /* Main.storyboard */,
 				3D886D2E2459492A003B76EA /* Notification.storyboard */,
+				20380AC82477CB7400238F8D /* Dashboard.storyboard */,
+				20380ACC2477DCA400238F8D /* VehicleBooking.storyboard */,
+				20380ACE2477DCB500238F8D /* Reports.storyboard */,
+				20380AD02477DCC700238F8D /* ProfileSettings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -735,13 +840,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9317C652398D476009C7D1B /* LaunchScreen.storyboard in Resources */,
+				20380ACD2477DCA400238F8D /* VehicleBooking.storyboard in Resources */,
 				3D886D2F2459492A003B76EA /* Notification.storyboard in Resources */,
+				20380AD12477DCC700238F8D /* ProfileSettings.storyboard in Resources */,
 				3DE090C12461510C00D07BAE /* RideDetailsCollectionViewCell.xib in Resources */,
 				3D639A75245FFBFA001E2DFB /* VehicleDetailsCollectionViewCell.xib in Resources */,
 				3D0282CE2456E16A00D3EB2A /* Colors.xcassets in Resources */,
+				20FB63AC24767EC400C3557C /* proxima_ssv in Resources */,
 				C9317C622398D476009C7D1B /* Assets.xcassets in Resources */,
-				3D5BCB1F246BE922006780FA /* proxima_ssv in Resources */,
+				20380AC92477CB7400238F8D /* Dashboard.storyboard in Resources */,
 				C9317C5D2398D475009C7D1B /* Main.storyboard in Resources */,
+				20380ACF2477DCB500238F8D /* Reports.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,12 +921,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9317C792399021F009C7D1B /* ServiceAPI.swift in Sources */,
+				20380AD62477DD2D00238F8D /* UserProfileViewController.swift in Sources */,
 				3D1D23942452C37B0031B4FA /* ChartViewController.swift in Sources */,
 				3D639A7724607780001E2DFB /* ImageCollectionViewCell.swift in Sources */,
 				C9B01E6C239A2F020034BAF7 /* AzureADHandler.swift in Sources */,
 				3DE090B924613B5900D07BAE /* TripDetailsFirstTableViewCell.swift in Sources */,
 				3D9D43E1246A7AFC00059FFE /* BaseViewController.swift in Sources */,
 				3D886D3324595263003B76EA /* HomeFirstTableviewCell.swift in Sources */,
+				20380A8A2477B9BD00238F8D /* GUIService.swift in Sources */,
 				3DDC80A82449CD1E00E5AEC5 /* TenantVehicleFleetListResponse.swift in Sources */,
 				3D8AFC8A245EA9B400AD9CC4 /* VehicleHealthDataResponse.swift in Sources */,
 				3D50A2BD244DA85700520E1D /* BookingStatusCountModel.swift in Sources */,
@@ -831,6 +942,7 @@
 				3DCB2A792448636300B38053 /* VehicleDelegate.swift in Sources */,
 				3DEA14342458353D0001412C /* SearchViewController.swift in Sources */,
 				3DE55789244EED20007434E7 /* SafetyReportDataModel.swift in Sources */,
+				3DF1988D24779C45002B4AF1 /* AlertsRequest.swift in Sources */,
 				C9317C722398F950009C7D1B /* APIConstants.swift in Sources */,
 				3D59590D24750A4E0013E71B /* ProjectUtils.swift in Sources */,
 				3DE090C02461510C00D07BAE /* RideDetailsCollectionViewCell.swift in Sources */,
@@ -862,17 +974,21 @@
 				3D465636245030AE005ABF42 /* TripListByFilterRequest.swift in Sources */,
 				3D8AFCAA245EC34A00AD9CC4 /* VehicleBookingSummaryModel.swift in Sources */,
 				3D85B3CC245C00250018A44B /* GetUserRequest.swift in Sources */,
+				20380ACB2477CDA900238F8D /* UIWindowTransition.swift in Sources */,
 				3D50A2C3244DAE4000520E1D /* BookingSummaryResponse.swift in Sources */,
 				C9317C772399011F009C7D1B /* UserServiceAPI.swift in Sources */,
 				3DE55777244EC7A9007434E7 /* ReportDelegate.swift in Sources */,
 				3DE55795244EF903007434E7 /* TenantListModel.swift in Sources */,
 				3DDC80A224499D3B00E5AEC5 /* LoggedInUserBookingsResponse.swift in Sources */,
+				3DF198932477B29D002B4AF1 /* FaultsNotificationTableViewCell.swift in Sources */,
+				3DF1988F24779C67002B4AF1 /* AlertsResponse.swift in Sources */,
 				3DE5577F244EC9CD007434E7 /* UtilizationReportDataRequest.swift in Sources */,
+				20380AC72477BFDA00238F8D /* NotificationViewController.swift in Sources */,
 				C9317C8923991B6B009C7D1B /* Encodable+Extension.swift in Sources */,
 				C9317C602398D475009C7D1B /* Fleet_Tracker.xcdatamodeld in Sources */,
 				C90916A2239A7A9E0087542E /* EndPoint.swift in Sources */,
 				3DE55799244F05B4007434E7 /* DashboardManager.swift in Sources */,
-				3D0775D92473E03D00F200B6 /* NotificationTableViewCell.swift in Sources */,
+				3D0775D92473E03D00F200B6 /* EventsNotificationTableViewCell.swift in Sources */,
 				3D85B3D0245C035B0018A44B /* GetUserModel.swift in Sources */,
 				C909169F239A36610087542E /* MSALUserModel.swift in Sources */,
 				3DE5579D244F07F2007434E7 /* SADashboardSummaryResponse.swift in Sources */,
@@ -884,6 +1000,7 @@
 				3D8AFC98245EB57800AD9CC4 /* TodaysBookingStatusCountRequest.swift in Sources */,
 				3DEA142F245822B00001412C /* GoogleMapManager.swift in Sources */,
 				3DE55791244EF5DE007434E7 /* TenantServiceAPI.swift in Sources */,
+				20380ADC2477F7FD00238F8D /* CustomSegmentedControl.swift in Sources */,
 				3D50A2C7244DAFEE00520E1D /* BookingSummaryRequest.swift in Sources */,
 				3DE5578D244EF57C007434E7 /* TenantDelegate.swift in Sources */,
 				3D8AFCA0245EBD6800AD9CC4 /* SpecificBookingStatusRequest.swift in Sources */,
@@ -900,6 +1017,7 @@
 				3D50A2CD244DC55400520E1D /* MapViewController.swift in Sources */,
 				3DE5577D244EC9A9007434E7 /* UtilizationReportDataResponse.swift in Sources */,
 				3D8AFC90245EAEF000AD9CC4 /* PowerBIReportsInfoResponse.swift in Sources */,
+				3DF198952477B2B6002B4AF1 /* GeofenceNotificationTableViewCell.swift in Sources */,
 				3D59590B2474FEC80013E71B /* GeofenceServiceAPI.swift in Sources */,
 				C9317C582398D475009C7D1B /* SceneDelegate.swift in Sources */,
 				3DDC809E2449994400E5AEC5 /* UserBookingsManager.swift in Sources */,
@@ -909,6 +1027,7 @@
 				3D46563824503ADD005ABF42 /* RouteDelegate.swift in Sources */,
 				3DE55793244EF8A5007434E7 /* TenantListResponse.swift in Sources */,
 				3D46563E24504540005ABF42 /* RouteListResponse.swift in Sources */,
+				3DACC3DB247683090025CD2A /* GeofenceViewController.swift in Sources */,
 				3DE557A3244F14AD007434E7 /* RoleBasedUserCountModel.swift in Sources */,
 				3D465634245022F2005ABF42 /* TripListByFilterModel.swift in Sources */,
 				C9317C702398E3CD009C7D1B /* APIClient.swift in Sources */,
@@ -916,8 +1035,10 @@
 				3D8AFC96245EB50600AD9CC4 /* TodaysBookingStatusCountModel.swift in Sources */,
 				3D886D3924599E4B003B76EA /* DropdownTableViewCell.swift in Sources */,
 				3D50A2CB244DBFFE00520E1D /* VehicleListOfFleetModel.swift in Sources */,
+				3DF1989124779C83002B4AF1 /* AlertsModel.swift in Sources */,
 				3D8AFC9C245EB9A800AD9CC4 /* BookedVehicleCountResponse.swift in Sources */,
 				3DE090BD24613B9F00D07BAE /* TripDetailsThirdTableViewCell.swift in Sources */,
+				20380ADA2477DD6600238F8D /* VehicleBokingViewController.swift in Sources */,
 				3D50A2CF244DC8EF00520E1D /* VehicleListOfFleetRequest.swift in Sources */,
 				3D46563C24503B19005ABF42 /* RouteServiceAPI.swift in Sources */,
 				3D50A2C5244DAED000520E1D /* BookingSummaryModel.swift in Sources */,
@@ -946,6 +1067,7 @@
 				3D50A2BB244DA16200520E1D /* PendingApprovalsRequest.swift in Sources */,
 				C9317C8B23991C46009C7D1B /* LoginRequest.swift in Sources */,
 				3D46563024502043005ABF42 /* TripServiceAPI.swift in Sources */,
+				20380A882477B7BB00238F8D /* MainTabViewController.swift in Sources */,
 				3D8AFC9A245EB93F00AD9CC4 /* BookedVehicleCountRequest.swift in Sources */,
 				3DE5579F244F082F007434E7 /* SADashboardSummaryModel.swift in Sources */,
 				3D8AFCA6245EC10200AD9CC4 /* VehicleBookingSummaryRequest.swift in Sources */,
@@ -953,6 +1075,8 @@
 				3D465646245078AF005ABF42 /* DeleteRouteResponse.swift in Sources */,
 				3DCB2A7D2448657B00B38053 /* VehicleServiceAPI.swift in Sources */,
 				3D50A2BF244DA90800520E1D /* BookingStatusCountResponse.swift in Sources */,
+				20380A8F2477BDEB00238F8D /* UIViewController+Extension.swift in Sources */,
+				20380AD82477DD5600238F8D /* ReportsViewController.swift in Sources */,
 				3DE557A5244F1570007434E7 /* RoleBasedUserCountRequest.swift in Sources */,
 				3DDC80A424499E1C00E5AEC5 /* BookingsModel.swift in Sources */,
 			);
@@ -1099,7 +1223,7 @@
 			baseConfigurationReference = AC85758DC901DC1FCAD4218F /* Pods-Fleet Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ritesh Gupta (92QJBRVZ4M)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CKQ28Q23M5;
 				INFOPLIST_FILE = "Fleet Tracker/Info.plist";
@@ -1108,9 +1232,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.undp.fleettracker;
+				PRODUCT_BUNDLE_IDENTIFIER = org.undp.fleettracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = UNDP_Devlopment_Provisioning_Profile;
+				PROVISIONING_PROFILE_SPECIFIER = FleetTracker_UNDP_Provisioning_Profile_1.0;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1121,7 +1245,7 @@
 			baseConfigurationReference = 060F108E655D85CC47A55EDF /* Pods-Fleet Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ritesh Gupta (92QJBRVZ4M)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CKQ28Q23M5;
 				INFOPLIST_FILE = "Fleet Tracker/Info.plist";
@@ -1130,9 +1254,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.undp.fleettracker;
+				PRODUCT_BUNDLE_IDENTIFIER = org.undp.fleettracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = UNDP_Devlopment_Provisioning_Profile;
+				PROVISIONING_PROFILE_SPECIFIER = FleetTracker_UNDP_Provisioning_Profile_1.0;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -32,11 +32,12 @@ class HomeViewController: BaseViewController {
         self.vehicleManager.vehicleDelegate = self
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
-        
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     
 }
 
@@ -143,11 +144,12 @@ extension HomeViewController:HomeSecondTableviewCellDelegate
         selectedDropdownFleetId = fleetId
         print("$$$ in HomeViewController:getFleetId::  \(fleetId)")
         availableVehiclesArray.removeAll()
-         let tenantId = UserDefaults.standard.integer(forKey: TenantId)
+        // let tenantId = UserDefaults.standard.integer(forKey: TenantId)
+        let tenantId = UserManager.shared.user?.TenantId
         BaseViewController.addActivitiIndicaterView()
         //for page in 1 ... 10{
            // print("page = \(page)")
-        let data = VehicleListByFilterRequest(tenantId: tenantId, fleetId: fleetId, sortColumnName: "index", sortType: "asc", searchKey: "", pageNo: 1, pageSize: 10, startRecordNo: 0, isSearchTextLengthValid: true)
+        let data = VehicleListByFilterRequest(tenantId: tenantId!, fleetId: fleetId, sortColumnName: "index", sortType: "asc", searchKey: "", pageNo: 1, pageSize: 10, startRecordNo: 0, isSearchTextLengthValid: true)
         VehicleManager.shared.getVehicleListByFilter(from: data.toJSON()!)
        // }
     }
@@ -169,9 +171,10 @@ extension HomeViewController:HomeThirdTableviewCellDelegate
         print("getSearchedText:: \(text)")
         
         availableVehiclesArray.removeAll()
-        let tenantId = UserDefaults.standard.integer(forKey: TenantId)
+       //let tenantId = UserDefaults.standard.integer(forKey: TenantId)
+         let tenantId = UserManager.shared.user?.TenantId
         BaseViewController.addActivitiIndicaterView()
-        let data = VehicleListByFilterRequest(tenantId: tenantId, fleetId: selectedDropdownFleetId, sortColumnName: "index", sortType: "asc", searchKey: text, pageNo: 1, pageSize: 10, startRecordNo: 0, isSearchTextLengthValid: true)
+        let data = VehicleListByFilterRequest(tenantId: tenantId!, fleetId: selectedDropdownFleetId, sortColumnName: "index", sortType: "asc", searchKey: text, pageNo: 1, pageSize: 10, startRecordNo: 0, isSearchTextLengthValid: true)
         VehicleManager.shared.getVehicleListByFilter(from: data.toJSON()!)
     }
     
@@ -288,11 +291,16 @@ extension HomeViewController:UICollectionViewDelegate
 {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("!!! indexPath  \(indexPath.row)")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TripDetailsViewController") as! TripDetailsViewController
-        vc.vehicleData = availableVehiclesArray[indexPath.row]
-
-      present(vc, animated: true, completion: nil)
+        if let vcTripDetails = GUIService.shared.showTripDetailsViewController() {
+            vcTripDetails.vehicleData = availableVehiclesArray[indexPath.row]
+            self.navigationController?.pushViewController(vcTripDetails, animated: true)
+        }
+        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "TripDetailsViewController") as! TripDetailsViewController
+//        vc.vehicleData = availableVehiclesArray[indexPath.row]
+//
+//      present(vc, animated: true, completion: nil)
 
 
 

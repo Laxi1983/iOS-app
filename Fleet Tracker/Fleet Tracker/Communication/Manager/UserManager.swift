@@ -8,12 +8,22 @@
 
 import UIKit
 
+public enum UserRole : Int {
+    case SUPER_ADMIN = 1
+    case TENANT_ADMIN = 3
+    case FLEET_OWNER = 4
+    case DRIVER = 5
+    case PASSENGER = 6
+}
+
 class UserManager: NSObject {
     
     public static let shared = UserManager()
+    var user:UserModel?
     private override init() {}
     
     var userDelegate : UserDelegate?
+    
     
     func login(from params: [String:Any]) {
         

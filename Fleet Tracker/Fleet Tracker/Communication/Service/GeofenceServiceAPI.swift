@@ -12,9 +12,9 @@ class GeofenceServiceAPI: ServiceAPI {
     static let shared = GeofenceServiceAPI()
     private override init() {}
     
-//    func getAlerts(from params: [String:Any], result: @escaping (Result<RouteListResponse, APIServiceError>) -> Void) {
-//        construct(endpoint: .ALERTS, params: params, method: .POST, result: result)
-//    }
-//
+    func getAlerts(from params: [String:Any], result: @escaping (Result<AlertsResponse, APIServiceError>) -> Void) {
+        construct(endpoint: .ALERTS, params: params, method: .POST, result: result)
+    }
+
     
 }

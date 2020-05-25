@@ -9,6 +9,6 @@
 import Foundation
 protocol GeofenceDelegate {
     
-    //func AlertsResponse(isSuccess: Bool, error: String?, data :RouteListResponse?)
+    func getAlertsResponse(isSuccess: Bool, error: String?, data :AlertsResponse?)
    
 }

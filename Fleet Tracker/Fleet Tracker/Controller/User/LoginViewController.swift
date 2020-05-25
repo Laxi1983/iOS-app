@@ -9,6 +9,7 @@
 import UIKit
 import MSAL
 import JWTDecode
+
 class LoginViewController: UIViewController {
     
     // Communication variables
@@ -107,6 +108,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func bookingStatusCount(_ sender: Any) {
+        print("&&&")
         print("###1 in bookingStatusCount")
         let data = BookingStatusCountRequest(tenantId: 42, fleetId: 57)
         VehicleManager.shared.getBookingStatusCount(from: data.toJSON()!)
@@ -119,7 +121,7 @@ class LoginViewController: UIViewController {
     @IBAction func bookingSummary(_ sender: Any) {
         
         let data = BookingSummaryRequest(tenantId: 42, fleetId: 57, StartDate: "2020-04-20", EndDate: "2020-04-20", sortColumnName: "index", sortType: "asc", searchKey: "", pageNo: 1, pageSize: 10, startRecordNo: 0, isSearchTextLengthValid: true)
-        
+        print("&&&")
         VehicleManager.shared.getbookingSummary(from: data.toJSON()!)
     }
     

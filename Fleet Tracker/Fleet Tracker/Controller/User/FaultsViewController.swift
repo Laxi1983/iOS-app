@@ -17,13 +17,14 @@ class FaultsViewController: UIViewController {
     
     
     @IBOutlet weak var tableViewTitleBaseView: UIView!
-    
+    var geofenceManager = GeofenceManager.shared
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        geofenceManager.geofenceDelegate = self
         tableView.dataSource = self
         tableView.delegate = self
         searchBar.delegate = self
@@ -32,7 +33,7 @@ class FaultsViewController: UIViewController {
         searchBar.isTranslucent = true
         searchBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
        let tabBar = self.tabBarController!.tabBar
-       tabBar.selectionIndicatorImage = UIImage().createSelectionIndicator(color: UIColor.blue, size: CGSize(width: tabBar.frame.width/CGFloat(tabBar.items!.count), height: tabBar.frame.height), lineHeight: 2.0)
+       tabBar.selectionIndicatorImage = UIImage().createSelectionIndicator(color: UIColor(named:"TabBarSelectionColor")!, size: CGSize(width: tabBar.frame.width/CGFloat(tabBar.items!.count), height: tabBar.frame.height), lineHeight: 3.0)
         
         
         
@@ -43,6 +44,15 @@ class FaultsViewController: UIViewController {
     }
     
    
+    
+    
+    
+    
+    @IBAction func nextButtonClicked() {
+           
+        
+       }
+       
    
 }
 
@@ -55,10 +65,11 @@ extension FaultsViewController:UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
-        cell.actionButton.layer.cornerRadius = 10
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FaultsNotificationTableViewCell", for: indexPath) as! FaultsNotificationTableViewCell
+        cell.actionButton.layer.cornerRadius = 15
         cell.actionButton.layer.borderColor = UIColor(named: "SignInButtonBackgroundColor")?.cgColor
         cell.actionButton.layer.borderWidth = 2
+        
         return cell
         
     }
@@ -69,6 +80,12 @@ extension FaultsViewController:UITableViewDataSource
 }
 extension FaultsViewController:UITableViewDelegate
 {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+              
+           tableView.deselectRow(at: indexPath, animated: true)
+          }
+          
+    
     
 }
 
@@ -78,3 +95,11 @@ extension FaultsViewController:UISearchBarDelegate
     
 }
 
+extension FaultsViewController:GeofenceDelegate
+{
+    func getAlertsResponse(isSuccess: Bool, error: String?, data: AlertsResponse?) {
+        
+    }
+    
+    
+}

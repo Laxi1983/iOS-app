@@ -32,6 +32,7 @@ class ChartViewController: UIViewController {
         for i in 0..<dataPoints.count {
             let dataEntry = PieChartDataEntry(value: values[i], label: dataPoints[i], data: dataPoints[i] as AnyObject)
             dataEntriesArray.append(dataEntry)
+            print("&&&")
         }
         let pieChartDataSet = PieChartDataSet(entries: dataEntriesArray, label: nil)
         pieChartDataSet.colors = Colors(numbersOfColor: dataPoints.count)

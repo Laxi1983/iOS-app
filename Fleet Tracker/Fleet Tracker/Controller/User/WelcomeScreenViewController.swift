@@ -91,7 +91,9 @@ extension WelcomeScreenViewController: iCarouselDataSource
         imageview.frame = frame
         imageview.contentMode = .scaleAspectFit
         imageview.image = arr[index]
+        print("&&&")
         tempview.addSubview(imageview)
         return tempview
+        
     }
 }

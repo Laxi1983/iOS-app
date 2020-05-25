@@ -124,41 +124,37 @@ extension SignInViewController : UserDelegate, MSALUserDelegate {
 
         let json = try? JSONSerialization.data(withJSONObject:jsonData)
         if let jsonString = NSString(data: json!, encoding: String.Encoding.utf8.rawValue) as String? {
+            UserDefaults.standard.set(jsonString,forKey:UserInfo)
             if let object = UserResponse.deserialize(from: jsonString) {
                 if let finalData = object.data
                 {
-                    UserDefaults.standard.set(finalData.UserID, forKey:UserID )
-                    UserDefaults.standard.set(finalData.TenantName, forKey:TenantName )
-                    UserDefaults.standard.set(finalData.FleetList, forKey:FleetList )
-                    UserDefaults.standard.set(finalData.UpdateBy, forKey:UpdateBy )
-                    UserDefaults.standard.set(finalData.RoleId, forKey:RoleId )
-                    UserDefaults.standard.set(finalData.CountryLatitude, forKey:CountryLatitude )
-                    UserDefaults.standard.set(finalData.CountryCode, forKey:CountryCode )
-                    UserDefaults.standard.set(finalData.TenantCode, forKey:TenantCode )
-                    UserDefaults.standard.set(finalData.CountryLongitude, forKey:CountryLongitude )
-                    UserDefaults.standard.set(finalData.MobileNumber, forKey:MobileNumber )
-                    UserDefaults.standard.set(finalData.TenantId, forKey:TenantId )
-                    UserDefaults.standard.set(finalData.Password, forKey:Password )
-                    UserDefaults.standard.set(finalData.Email, forKey:Email )
-                    UserDefaults.standard.set(finalData.Name, forKey:Name )
-                    UserDefaults.standard.set(finalData.Status, forKey:Status )
-                    UserDefaults.standard.set(finalData.PowerBIs, forKey:PowerBIs )
-                    UserDefaults.standard.set(finalData.Vehicle, forKey:Vehicle )
-                    
-                 
+                    UserManager.shared.user = finalData
+//                    UserDefaults.standard.set(finalData.UserID, forKey:UserID )
+//                    UserDefaults.standard.set(finalData.TenantName, forKey:TenantName )
+//                    UserDefaults.standard.set(finalData.FleetList, forKey:FleetList )
+//                    UserDefaults.standard.set(finalData.UpdateBy, forKey:UpdateBy )
+//                    UserDefaults.standard.set(finalData.RoleId, forKey:RoleId )
+//                    UserDefaults.standard.set(finalData.CountryLatitude, forKey:CountryLatitude )
+//                    UserDefaults.standard.set(finalData.CountryCode, forKey:CountryCode )
+//                    UserDefaults.standard.set(finalData.TenantCode, forKey:TenantCode )
+//                    UserDefaults.standard.set(finalData.CountryLongitude, forKey:CountryLongitude )
+//                    UserDefaults.standard.set(finalData.MobileNumber, forKey:MobileNumber )
+//                    UserDefaults.standard.set(finalData.TenantId, forKey:TenantId )
+//                    UserDefaults.standard.set(finalData.Password, forKey:Password )
+//                    UserDefaults.standard.set(finalData.Email, forKey:Email )
+//                    UserDefaults.standard.set(finalData.Name, forKey:Name )
+//                    UserDefaults.standard.set(finalData.Status, forKey:Status )
+//                    UserDefaults.standard.set(finalData.PowerBIs, forKey:PowerBIs )
+//                    UserDefaults.standard.set(finalData.Vehicle, forKey:Vehicle )
                 }
                 
                 if object.status == 0 {
-                DispatchQueue.main.asyncAfter(deadline: .now()) {
-                     
-                       let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                       let vc = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
-                    self.present(vc, animated: true, completion: nil)
+                    DispatchQueue.main.asyncAfter(deadline: .now()) {
+                        if let tabBarController = GUIService.shared.showMainTabBarController() {
+                            self.present(tabBarController, animated: true, completion: nil)
+                        }
+                    }
                 }
-                }
-                
-                
-                
             }
         }
         

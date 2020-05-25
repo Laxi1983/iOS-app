@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-Fleet Tracker/Pods-Fleet Tracker-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
+${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework
+${BUILT_PRODUCTS_DIR}/KDCalendar/KDCalendar.framework
+${BUILT_PRODUCTS_DIR}/MSAL/MSAL.framework
+${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework

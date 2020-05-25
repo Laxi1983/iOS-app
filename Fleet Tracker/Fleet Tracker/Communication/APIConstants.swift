@@ -33,6 +33,7 @@ public enum APIServiceError: Error {
     case DECODE_ERROR
 }
 
+let UserInfo = "UserInfo"
 let UserID = "UserID"
 let Name = "Name"
 let Email = "Email"
