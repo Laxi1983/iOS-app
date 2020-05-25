@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="proximanova-semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeThirdTableviewCell" customModule="Fleet_Tracker" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VehicleDetailsCollectionViewCell" id="gTV-IL-0wX" customClass="VehicleDetailsCollectionViewCell" customModule="Fleet_Tracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2u3-V9-gmV">
+                        <rect key="frame" x="20" y="15" width="42" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="jBa-Wk-1pn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                        <color key="textColor" name="TextColor3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Seen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-tJ-DbJ">
+                        <rect key="frame" x="20" y="65" width="71.5" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="RdU-1j-fwR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                        <color key="textColor" name="TextColor3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D88-U9-7LD">
+                        <rect key="frame" x="309" y="15" width="39" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="D10-5U-1p1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrm-KK-Rj8">
+                        <rect key="frame" x="309" y="65" width="39" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="gRf-y7-faQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FR0-hJ-aW0">
+                        <rect key="frame" x="309" y="115" width="39" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="J7u-Xq-X8f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWk-J7-sHk">
+                        <rect key="frame" x="0.0" y="49" width="359" height="1"/>
+                        <color key="backgroundColor" name="LineSeperatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1v4-5f-TOF"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hil-hg-geQ">
+                        <rect key="frame" x="0.0" y="99" width="359" height="1"/>
+                        <color key="backgroundColor" name="LineSeperatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3IL-FJ-58n"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-jk-mqI">
+                        <rect key="frame" x="20" y="115" width="63" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="MUD-ZE-Cgy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                        <color key="textColor" name="TextColor3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" name="CardBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Wrm-KK-Rj8" firstAttribute="top" secondItem="NWk-J7-sHk" secondAttribute="bottom" constant="15" id="2bA-UT-bLV"/>
+                <constraint firstItem="LDh-tJ-DbJ" firstAttribute="top" secondItem="NWk-J7-sHk" secondAttribute="bottom" constant="15" id="3m7-e4-38o"/>
+                <constraint firstItem="UTf-jk-mqI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="49U-yh-vhi"/>
+                <constraint firstAttribute="trailing" secondItem="FR0-hJ-aW0" secondAttribute="trailing" constant="11" id="4Rl-JU-IUb"/>
+                <constraint firstItem="UTf-jk-mqI" firstAttribute="top" secondItem="hil-hg-geQ" secondAttribute="bottom" constant="15" id="7z1-Yz-0IE"/>
+                <constraint firstItem="2u3-V9-gmV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="FmU-P1-HoA"/>
+                <constraint firstItem="NWk-J7-sHk" firstAttribute="top" secondItem="2u3-V9-gmV" secondAttribute="bottom" constant="15" id="MFd-HU-t2C"/>
+                <constraint firstItem="D88-U9-7LD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="NkP-xx-EUP"/>
+                <constraint firstItem="LDh-tJ-DbJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="ODp-q5-CMl"/>
+                <constraint firstItem="hil-hg-geQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aum-1N-mUK"/>
+                <constraint firstItem="NWk-J7-sHk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d2b-Ck-Blc"/>
+                <constraint firstItem="hil-hg-geQ" firstAttribute="top" secondItem="LDh-tJ-DbJ" secondAttribute="bottom" constant="15" id="hHp-vO-bvZ"/>
+                <constraint firstAttribute="trailing" secondItem="Wrm-KK-Rj8" secondAttribute="trailing" constant="11" id="hut-HL-E7t"/>
+                <constraint firstItem="2u3-V9-gmV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="iZR-AU-KqM"/>
+                <constraint firstAttribute="trailing" secondItem="hil-hg-geQ" secondAttribute="trailing" id="k6p-gz-F3I"/>
+                <constraint firstItem="FR0-hJ-aW0" firstAttribute="top" secondItem="hil-hg-geQ" secondAttribute="bottom" constant="15" id="r8d-Td-wIu"/>
+                <constraint firstAttribute="trailing" secondItem="NWk-J7-sHk" secondAttribute="trailing" id="r9L-bB-ns7"/>
+                <constraint firstAttribute="trailing" secondItem="D88-U9-7LD" secondAttribute="trailing" constant="11" id="yD4-qd-Kon"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="distanceLabel" destination="FR0-hJ-aW0" id="b5Q-Dj-7x1"/>
+                <outlet property="lastSeenLabel" destination="Wrm-KK-Rj8" id="m4H-Jf-qKb"/>
+                <outlet property="nameLabel" destination="D88-U9-7LD" id="gQR-hj-jmd"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CardBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LineSeperatorColor">
+            <color red="0.81176470588235294" green="0.81176470588235294" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor3">
+            <color red="0.47058823529411764" green="0.51764705882352946" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

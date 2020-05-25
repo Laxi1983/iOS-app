@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Fleet Tracker' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Fleet Tracker
+  pod 'MSAL'
+  pod 'HandyJSON', '~> 5.0.1'
+  pod 'GoogleMaps'
+  pod 'Charts'
+  pod 'iCarousel'
+  pod 'GooglePlaces'
+  pod 'KDCalendar', '~> 1.8.9'
+  pod 'FSCalendar'
+  pod 'JWTDecode', '~> 2.4'
+end
+
